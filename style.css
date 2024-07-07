@@ -1,0 +1,15 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  /* Colors */
+  --primary: #1f2937;
+  --secondary: #e5e7eb;
+  --hero-text: #f9faf8;
+  --button: #3882f6;
+}
