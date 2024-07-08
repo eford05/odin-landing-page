@@ -23,7 +23,9 @@ body {
 /* Primary Font Color */
 #logo,
 h1,
-.title-container a {
+.title-container a,
+.cta-info h2,
+.cta-container a {
   color: var(--hero-text);
 }
 
@@ -31,7 +33,8 @@ h1,
 .nav-link,
 .title-container p,
 #hero-fig figcaption,
-.testimonial-fig figcaption {
+.testimonial-fig figcaption,
+.cta-info p {
   font-size: 1.2rem;
   color: var(--secondary);
 }
@@ -63,8 +66,17 @@ header nav ul,
 .title-container,
 .container-testimonials article,
 .container-testimonials,
-.testimonial-fig {
+.testimonial-fig,
+main section:last-child,
+.cta-container {
   display: flex;
+}
+
+/* Background Color */
+.title-container a,
+.cta-container {
+  background-color: var(--button);
+  background-color: var(--button);
 }
 
 /**** Hero Section Styles ****/
@@ -116,7 +128,6 @@ h1 {
 .title-container a {
   font-size: 1.1rem;
   width: fit-content;
-  background-color: var(--button);
   font-weight: bold;
   padding: 0.5rem 2.2rem;
   text-align: center;
@@ -203,4 +214,31 @@ blockquote footer {
   font-size: 1.2rem;
   text-align: end;
   font-style: normal;
+}
+
+/**** Call to Action Section ****/
+
+main section:last-child {
+  justify-content: center;
+  padding: 6% 0;
+}
+
+.cta-container {
+  width: 70%;
+  padding: 5rem;
+  border-radius: 1rem;
+  justify-content: space-between;
+}
+
+.cta-info h2 {
+  font-size: 1.5rem;
+}
+
+.cta-container a {
+  font-size: 1.4rem;
+  height: fit-content;
+  border: 2px solid var(--hero-text);
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
 }
