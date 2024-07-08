@@ -13,3 +13,115 @@
   --hero-text: #f9faf8;
   --button: #3882f6;
 }
+
+body {
+  width: 100vw;
+  font-family: roboto;
+}
+
+/* Shared Styles */
+
+/* Primary Font Color */
+#logo,
+h1,
+.title-container a {
+  color: var(--hero-text);
+}
+
+/* Secondary Font Color and Sizing */
+.nav-link,
+.title-container p,
+#hero-fig figcaption {
+  font-size: 1.2rem;
+  color: var(--secondary);
+}
+
+/* Sizing: Width Heights */
+
+header,
+.title-container,
+#hero-fig,
+#hero-img {
+  width: 100%;
+}
+
+header nav,
+#hero-img {
+  height: 100%;
+}
+
+/* Display Flex */
+header nav,
+header nav ul,
+.title-container {
+  display: flex;
+}
+
+header {
+  background-color: var(--primary);
+  padding: 1.5rem 10% 6%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5rem;
+  column-gap: 3rem;
+}
+
+/* Remove Default Styling */
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Top logo and navigation styling */
+#logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+header nav {
+  justify-content: end;
+  align-items: end;
+}
+
+header nav ul {
+  flex-direction: row;
+  justify-content: end;
+  gap: 2rem;
+}
+
+/* Styles Hero Text and Image */
+
+.title-container {
+  height: fit-content;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.title-container a {
+  font-size: 1.1rem;
+  width: fit-content;
+  background-color: var(--button);
+  font-weight: bold;
+  padding: 0.5rem 2.2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+#hero-fig {
+  height: 40vh;
+  border: 1px solid white;
+}
+
+#hero-img {
+  object-fit: cover;
+}
+
+/* I would like to add hover effect to hero image that would display figcaption */
+#hero-fig figcaption {
+  opacity: 0;
+}
