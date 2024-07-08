@@ -183,3 +183,24 @@ main section:first-child h2 {
   font-size: 1.2rem;
   text-align: center;
 }
+
+/**** Quote Section ****/
+main section:nth-child(2) {
+  background-color: #e5e7eb;
+  padding: 5rem 20rem;
+}
+
+blockquote {
+  font-size: 36px;
+  font-weight: 300;
+  color: var(--primary);
+  text-align: justify;
+  font-style: italic;
+}
+
+blockquote footer {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: end;
+  font-style: normal;
+}
