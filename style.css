@@ -34,7 +34,8 @@ h1,
 .title-container p,
 #hero-fig figcaption,
 .testimonial-fig figcaption,
-.cta-info p {
+.cta-info p,
+#footer {
   font-size: 1.2rem;
   color: var(--secondary);
 }
@@ -73,6 +74,11 @@ main section:last-child,
 }
 
 /* Background Color */
+header,
+#footer {
+  background-color: var(--primary);
+}
+
 .title-container a,
 .cta-container {
   background-color: var(--button);
@@ -82,7 +88,6 @@ main section:last-child,
 /**** Hero Section Styles ****/
 
 header {
-  background-color: var(--primary);
   padding: 1.5rem 10% 6%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -210,8 +215,8 @@ blockquote {
 }
 
 blockquote footer {
-  font-weight: bold;
   font-size: 1.2rem;
+  font-weight: bold;
   text-align: end;
   font-style: normal;
 }
@@ -241,4 +246,10 @@ main section:last-child {
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
   font-weight: bold;
+}
+
+/**** Footer Styles ****/
+footer {
+  text-align: center;
+  padding: 2% 0;
 }
